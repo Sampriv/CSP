@@ -7,7 +7,7 @@ def homework_times():
     import random
     homework_dictionary = {}
     for i in range(50):
-        homework_dictionary[i] = random.randint(1,20)
+        homework_dictionary[i] = random.randint(1, 20)
     return homework_dictionary
 
 
@@ -17,7 +17,7 @@ def split_dict_to_multiple(input_dict, friends):
     import copy, math
     max_limit = math.ceil(50 / friends)
     chunks = []
-    curr_dict ={}
+    curr_dict = {}
     for k, v in input_dict.items():
         if len(curr_dict.keys()) < max_limit:
             curr_dict.update({k: v})
@@ -27,3 +27,30 @@ def split_dict_to_multiple(input_dict, friends):
     # update last curr_dict
     chunks.append(curr_dict)
     return chunks
+    
+def honest_johnny_time(p_dict):
+    sum = 0
+    for key in p_dict.keys():
+        time = p_dict[key]
+        sum += time
+    return sum
+
+def cheating_johnny_time(dicts):
+    max = -100
+    for dict in dicts:
+        sum = 0
+        for key in dict.keys():
+            time = dict[key]
+            sum += time
+            if sum > max:
+               max = sum
+    max += 100
+    return max
+
+times = homework_times()
+times = {0: 1, 1: 2, 2: 3, 3: 20, 4: 20, 5: 30}
+total = honest_johnny_time(times)
+
+split_times = split_dict_to_multiple(times, 2)
+
+
