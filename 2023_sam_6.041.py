@@ -1,3 +1,5 @@
+# got help from paul kim figuring out the del function
+
 def item_list_to_dictionary(items_sold):
     items_sold_dict = {}
     for i in items_sold:
@@ -20,8 +22,7 @@ def min_item(sales_dict):
 
 items_sold = ['meatsa pizza', 'chicken parm', 'noodles noodles', 'meatsa pizza', 'chicken parm',
               'noodles noodles', 'chicken parm', 'tiramisu', 'garlic bread', 'eggplant parm',
-              'noodles noodles', 'spaghetti tacos', 'garlic bread', 'meatsa pizza',
-              'eggplant parm', 'salad with italian dressing']
+              'noodles noodles', 'spaghetti tacos', 'garlic bread', 'meatsa pizza']
 
 sales_dict = item_list_to_dictionary(items_sold)
 print("Original Dictionary:", sales_dict)
