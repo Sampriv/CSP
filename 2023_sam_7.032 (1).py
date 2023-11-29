@@ -29,4 +29,4 @@ ned.buy('food', 1273330)
 # Call the tweet method for the ned object and print the result
 print(ned.tweet())
 
-# paul kim helped me with possessions=None and possessions or [] help 
+# paul kim helped me with possessions=None and possessions or [] help
