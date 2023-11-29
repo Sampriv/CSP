@@ -15,6 +15,7 @@ class Flaherty(object):
         string = f"My name is {self.name} and I have {self.possessions}"
         return string
 
+
 # Create two Flaherty objects
 ned = Flaherty('Ned', 7739330, [])
 juanita = Flaherty('Juanita', 320000, [])
@@ -27,3 +28,5 @@ ned.buy('food', 1273330)
 
 # Call the tweet method for the ned object and print the result
 print(ned.tweet())
+
+# paul kim helped me with possessions=None and possessions or [] help 
