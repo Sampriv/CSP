@@ -18,7 +18,7 @@ class Flaherty(object):
 
 # Create two Flaherty objects
 ned = Flaherty('Ned', 7739330, [])
-juanita = Flaherty('Juanita', 320000, [])
+Sam = Flaherty('Sam', 320000, [])
 
 # Call the earn method for the ned object
 ned.earn()
