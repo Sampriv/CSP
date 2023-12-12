@@ -1,0 +1,228 @@
+# def transformer(dict):
+#     for key in dict.keys():
+#         if dict[key] == "student":
+#             dict[key] = "teacher"
+#         elif dict[key] == "teacher":
+#             dict[key] = "student"
+#     return dict
+        
+
+# a=people = {'mrkann': 'teacher',
+#           'drwu': 'teacher',
+#           'jiaming': 'student',
+#           'selina': 'student'}
+
+        
+# print(transformer(a))
+
+
+
+
+
+# 4.031
+
+"""Write a function review_1 with no input parameters and no returns that prints the following (3 rows, 4 columns) with a nested double loop:
+
+ * * * *  
+ * * * *  
+ * * * * 
+"""
+"""def review1():
+    for k in range(3):
+        row = ''
+        for i in range(4):
+            row = row + '* '
+        print(row)
+
+review1()"""
+
+
+
+""""def loop4():
+    for i in range(3):
+        for i in range(4):
+            print("* ", end="")
+        print()
+
+loop4()
+"""
+
+"""Write a function review_2 with no input parameters and no returns that prints the following with a nested double loop :
+
+202
+202 203 
+202 203 204 
+202 203 204 205"""
+"""def loop7():
+    for i in range(202, 206):
+        for j in range(202, i + 1):
+            print(f"{j} ", end="")
+        print()
+
+
+
+loop7()"""
+"""Write a function review_3 with no input parameters and no returns that prints the following with a nested double loop:
+
+2
+2 3 
+2 3 4 
+2 3 4 5"""
+"""def review_3():
+    for i in range(2, 6):
+        for j in range(2, i + 1):
+            print(f"{j}", end=' ')
+        print()
+
+review_3()"""
+
+"""Write a function review_4 with no input parameters and no returns that prints the following with a nested double loop:
+
+2 3 4 5
+2 3 4
+2 3  
+2"""
+
+""""def review_4():
+    for i in range(5, 1, -1):
+        for j in range(2, i+1):
+            print(f"{j}", end=' ')
+        print()
+
+review_4()
+
+def review_4():
+    for i in reversed(range(2, 6)):
+        for j in range(2, i+1):
+            print(f"{j}", end=' ')
+        print()
+
+review_4()"""
+
+
+"""Write a function review_5 with no input parameters and no returns that prints the following with a nested double loop :
+
+202 203 204
+202 203 204
+202 203 204 
+202 203 204"""
+"""def review_5():
+    for i in range(4):
+        for k in range(202, 205):
+            print(f"{k}", end = ' ')
+        print()
+
+review_5()"""
+
+"""
+This code is broken.  Fix it.   It is supposed to print this: 
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 """
+"""
+for i in range(1,6):
+    row = ""
+    for j in range(1, i+1):
+       row = row + str(j) + " "
+    print(row)"""
+
+"""
+This code is broken.  Fix it.   It is supposed to print this: 
+
+100 
+100 101 
+100 101 102 
+100 101 102 103 
+100 101 102 103 104 
+100 101 102 103 104 105 """
+
+
+"""for i in range(100,106):
+   row = ""
+   for j in range(100, i+1):
+       row = row + str(j) + " " #change i to j
+   print(row)
+
+"""
+
+
+
+
+
+#7.021
+
+
+# class Pet():
+#     def __init__(self, a, c, n):
+#         self.age = a
+#         self.color = c
+#         self.name = n
+    
+# list_of_pets = [Pet(2, "black", "Molly"), Pet(3, "brown", "Buddy"), Pet(1, "white", "Daisy")]
+
+# def pet_attributes(list):
+#     for item in list:
+#         print(f"Pets name {item.name}, Pets age {item.age}, Pets color {item.color}")
+        
+# pet_attributes(list_of_pets)
+
+
+
+# 7.032
+
+# class Teacher():
+#     def __init__(self, n, a, c):
+#         self.name = n
+#         self.age = a
+#         self.courses = c
+    
+# def get_old(self):
+#     self.age += 1
+
+# def new_classes(self, n_c):
+#     self.courses = n_c
+    
+# Martinez = Teacher("Matinez", 40, None)
+
+# get_old(Martinez)
+
+# classes = ["CSP", "CS50"]
+
+# new_classes(Martinez, classes)
+
+# print(Martinez.name, Martinez.courses, Martinez.age)
+
+
+
+
+# class Snack(object):
+#    def __init__(self, p_name, p_calories):
+#        self.name = p_name
+#        self.calories = p_calories
+
+#    def low_fat_it(self):
+#        self.name = "low fat " + self.name
+#        self.calories /= 2
+       
+# cheetos = Snack("cheetos", 300)
+
+# cheetos.low_fat_it()
+
+# print(f"Cheetos Low Fat {cheetos.calories}")
+
+
+
+
+
+
+# 4.031
+def loop1():
+    for i in range(3):
+        for j in range(4):
+            print("*", end=' ')
+        print
+        
+loop1()
